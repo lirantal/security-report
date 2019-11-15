@@ -7,7 +7,10 @@ console.log(Avatars[0])
 
 async function main() {
   const form = new Form()
-  const formData = await form.formQuestions()
+
+  // prompt for questions
+  await form.formQuestions()
+
   const { errors } = await form.submit()
   if (errors && errors.length === 0) {
     console.log('Submitted!')
