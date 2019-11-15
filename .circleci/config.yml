@@ -13,7 +13,7 @@ jobs:
           command: npm install --ignore-engines
       - run:
           name: codecov-cli
-          command: npm install -g codecov
+          command: sudo npm install -g codecov
       - run:
           name: lint
           command: npm run lint
