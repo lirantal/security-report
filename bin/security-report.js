@@ -29,6 +29,6 @@ main().catch(error => {
       console.error(` - ${Form.getFieldNameById(validationId)}: ${error.validation[validationId]}`)
     }
   } else {
-    console.error(`something failed: ${error.message}`)
+    console.error(`something failed: ${error.message ? error.message : 'aborting'}`)
   }
 })
