@@ -25,7 +25,13 @@
   },
   "license": "Apache-2.0",
   "keywords": [
-    "security, report, disclosure, responsible disclosure, disclose"
+    "security",
+    "vulnerability",
+    "vulnerabilities",
+    "report",
+    "disclosure",
+    "responsible disclosure",
+    "disclose"
   ],
   "homepage": "https://github.com/lirantal/security-report",
   "bugs": {
@@ -36,8 +42,7 @@
     "url": "https://github.com/lirantal/security-report.git"
   },
   "dependencies": {
-    "enquirer": "^2.3.2",
-    "nock": "^11.7.0"
+    "enquirer": "^2.3.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
@@ -65,6 +70,7 @@
     "jest": "^24.8.0",
     "lint-staged": "^9.2.0",
     "lockfile-lint": "^2.0.1",
+    "nock": "^11.7.0",
     "open-cli": "^5.0.0",
     "prettier": "^1.18.2",
     "semantic-release": "^15.13.19"

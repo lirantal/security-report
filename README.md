@@ -3,14 +3,14 @@
 </h1>
 
 <p align="center">
-  a CLI to quickly report a security vulnerability
+  a CLI to quickly report a security vulnerability in Node.js, RubyGems, Maven Central, PyPI and other ecosystems 
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.org/package/security-report"><img src="https://badgen.net/npm/v/security-report" alt="npm version"/></a>
   <a href="https://www.npmjs.org/package/security-report"><img src="https://badgen.net/npm/license/security-report" alt="license"/></a>
   <a href="https://www.npmjs.org/package/security-report"><img src="https://badgen.net/npm/dt/security-report" alt="downloads"/></a>
-  <a href="https://travis-ci.org/lirantal/security-report"><img src="https://badgen.net/travis/lirantal/security-report" alt="build"/></a>
+  <a href="https://circleci.com/gh/lirantal/security-report"><img src="https://circleci.com/gh/lirantal/security-report.svg?style=svg" alt="build"/></a>
   <a href="https://codecov.io/gh/lirantal/security-report"><img src="https://badgen.net/codecov/c/github/lirantal/security-report" alt="codecov"/></a>
   <a href="https://snyk.io/test/github/lirantal/security-report"><img src="https://snyk.io/test/github/lirantal/security-report/badge.svg" alt="Known Vulnerabilities"/></a>
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg" alt="Responsible Disclosure Policy" /></a>
@@ -18,26 +18,15 @@
 
 # About
 
-security-report
+[Snyk](http://snyk.io) values the security community and believes that a responsible disclosure of security vulnerabilities in open source packages helps ensure the security and privacy of all open source citizens.
 
-a CLI to quickly report a security vulnerability
-
-# Install
-
-```bash
-npm install --save security-report
-```
+Using this CLI you can disclose vulnerabilities you’ve found, and the Snyk team will help with the disclosure process to the relevant owners. Alternatively, you may email Snyk at security@snyk.io.
 
 # Usage
 
-```js
-// @TODO
-const {} = require('security-report')
+```bash
+npx security-report
 ```
-
-# Example
-
-<!-- TODO -->
 
 # Contributing
 
