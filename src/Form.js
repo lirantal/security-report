@@ -114,7 +114,7 @@ module.exports = class Form {
           'item_meta[77][]': String(this.formData.severity).toUpperCase(),
           'item_meta[81]': this.formData.email,
           action: 'frm_entries_create',
-          'item_meta[84]': '',
+          'item_meta[84]': String(this.formData.description),
           'item_meta[82]': String(this.formData.description)
         })
       )
