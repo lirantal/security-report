@@ -37,7 +37,7 @@ const avatars = [
 :--------..-------------:::-::' ossoooosssssssyh:'..''''/.'''-.''.-''...''''''
 :------...------------:::-::' ossoooosssssssyh:'..''''/.'''-.''.-''...''''''
 
-hi there, I'm Tomer Ezer from Snyk,
+hi there, I'm Tomer from Snyk,
  shall we report a security vulnerability today?
 
 `
