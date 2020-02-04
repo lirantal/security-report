@@ -58,7 +58,7 @@ jobs:
           at: ./
       - run:
           name: npm-verbosity
-          command: npm config set loglevel verbose --global
+          command: npm config set loglevel verbose
       - run:
           name: create-registry-user
           command: npx npm-auth-to-token@1.0.0 -u user -p password -e user@example.com -r http://0.0.0.0:4873
