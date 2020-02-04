@@ -63,13 +63,13 @@ workflows:
   project:
     jobs:
       - build
-      - lint
+      - lint:
           requires:
             - build
-      - test
+      - test:
           requires:
             - lint
-      - release
+      - release:
           filters:
             branches:
               only:
