@@ -42,7 +42,7 @@
     "url": "https://github.com/lirantal/security-report.git"
   },
   "dependencies": {
-    "enquirer": "^2.3.2"
+    "enquirer": "^2.3.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.2.1",
