@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     working_directory: ~/project
@@ -14,19 +14,65 @@ jobs:
       - run:
           name: codecov-cli
           command: sudo npm install -g codecov
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - ./node_modules
+
+  lint:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./node_modules
       - run:
           name: lint
           command: npm run lint
+
+  test:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./node_modules
       - run:
           name: test
           command: npm run test
       - run:
           name: coverage
           command: codecov
+            
+  release:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./node_modules
       - run:
           name: release
           command: npm run semantic-release
-      - save_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
-          paths:
-            - ./node_modules
+
+workflows:
+  version: 2.1
+  project:
+    jobs:
+      - build
+      - lint
+          requires:
+            - build
+      - test
+          requires:
+            - lint
+      - release
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - test
