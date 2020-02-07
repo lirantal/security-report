@@ -64,7 +64,8 @@ jobs:
           command: npm set registry http://0.0.0.0:4873
       - run:
           name: create-registry-user
-          command: curl -X PUT http://0.0.0.0:4873/-/user/org.couchdb.user:liran -H "Content-Type: application/json" -d '{"name":"liran","password":"liran","email":"liran@example.com","type":"user"}' | node -pe 'JSON.parse(fs.readFileSync(0)).token' | xargs npm config set '_authToken='
+          command: |
+            curl -X PUT http://0.0.0.0:4873/-/user/org.couchdb.user:liran -H "Content-Type: application/json" -d '{"name":"liran","password":"liran","email":"liran@example.com","type":"user"}' | node -pe 'JSON.parse(fs.readFileSync(0)).token' | xargs npm config set '_authToken='
       - run:
           name: npm-publish
           command: npm publish --verbose
