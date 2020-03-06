@@ -3,9 +3,17 @@
 
 const Form = require('../src/Form')
 const Avatars = require('../src/AnalystsAvatars').avatars
-console.log(Avatars[0])
+
+function getRandomAvatar(Avatars) {
+  const max = Avatars.length
+  const randomAvatarItem = Math.floor(Math.random() * max)
+
+  return Avatars[randomAvatarItem]
+}
 
 async function main() {
+  console.log(getRandomAvatar(Avatars))
+
   const form = new Form()
 
   // prompt for questions
