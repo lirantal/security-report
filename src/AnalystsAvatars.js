@@ -76,7 +76,6 @@ I am Kirill.
   awaiting orders.
 
 `,
-
   `                                                                   
                             '        '''''.'                          
                             '     '-:::/yyoso////-'                   
