@@ -60,13 +60,14 @@ module.exports = class Form {
 
   static getFieldNameById(id) {
     const fieldMapping = {
-      67: 'Your Name',
+      79: 'Your Name',
       68: 'Ecosystem',
       70: 'Module name',
       77: 'Severity',
       81: 'Email',
       82: 'Description',
-      84: 'Description'
+      84: 'Description',
+      113: 'Description'
     }
 
     return fieldMapping[id]
@@ -115,7 +116,8 @@ module.exports = class Form {
           'item_meta[81]': this.formData.email,
           action: 'frm_entries_create',
           'item_meta[84]': String(this.formData.description),
-          'item_meta[82]': String(this.formData.description)
+          'item_meta[82]': String(this.formData.description),
+          'item_meta[113]': String(this.formData.description)
         })
       )
       request.end()
