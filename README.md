@@ -12,7 +12,6 @@
   <a href="https://www.npmjs.org/package/security-report"><img src="https://badgen.net/npm/dt/security-report" alt="downloads"/></a>
   <a href="https://circleci.com/gh/lirantal/security-report"><img src="https://circleci.com/gh/lirantal/security-report.svg?style=svg" alt="build"/></a>
   <a href="https://codecov.io/gh/lirantal/security-report"><img src="https://badgen.net/codecov/c/github/lirantal/security-report" alt="codecov"/></a>
-  <a href="https://snyk.io/test/github/lirantal/security-report"><img src="https://snyk.io/test/github/lirantal/security-report/badge.svg" alt="Known Vulnerabilities"/></a>
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg" alt="Responsible Disclosure Policy" /></a>
 </p>
 
