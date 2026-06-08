@@ -10,7 +10,7 @@
   <a href="https://www.npmjs.org/package/security-report"><img src="https://badgen.net/npm/v/security-report" alt="npm version"/></a>
   <a href="https://www.npmjs.org/package/security-report"><img src="https://badgen.net/npm/license/security-report" alt="license"/></a>
   <a href="https://www.npmjs.org/package/security-report"><img src="https://badgen.net/npm/dt/security-report" alt="downloads"/></a>
-  <a href="https://circleci.com/gh/lirantal/security-report"><img src="https://circleci.com/gh/lirantal/security-report.svg?style=svg" alt="build"/></a>
+  <a href="https://github.com/lirantal/security-report/actions/workflows/ci.yml"><img src="https://github.com/lirantal/security-report/actions/workflows/ci.yml/badge.svg" alt="build"/></a>
   <a href="https://codecov.io/gh/lirantal/security-report"><img src="https://badgen.net/codecov/c/github/lirantal/security-report" alt="codecov"/></a>
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg" alt="Responsible Disclosure Policy" /></a>
 </p>
