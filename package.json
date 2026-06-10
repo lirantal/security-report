@@ -1,4 +1,8 @@
 {
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
   "name": "security-report",
   "version": "0.0.0-development",
   "description": "a CLI to quickly report a security vulnerability",
